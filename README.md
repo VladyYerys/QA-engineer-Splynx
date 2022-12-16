@@ -10,12 +10,14 @@ QA engineer
 ```
 sudo apt update && sudo apt-get update && sudo apt-get install apache2
 ```
+
 ```
-sudo apt update && sudo apt install mysql-server && sudo systemctl start mysql.service && systemctl status mysql.service
+sudo apt update  && sudo apt-get update -y && sudo apt install nginx -y && sudo ufw app list && sudo ufw allow 'Nginx HTTP' && sudo ufw enable -y && sudo ufw status && systemctl status nginx && sudo apt-get upgrade -y
+```
+sudo apt update && sudo apt install mysql-server -y && sudo systemctl start mysql.service && systemctl status mysql.service && sudo apt-get upgrade -y
 ```
 ```
-sudo apt-get update && sudo apt -y install software-properties-common && sudo add-apt-repository ppa:ondrej/php && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo nano hello.php && <?php echo 'Hello World!';?> && php hello.php
-```
+sudo apt-get update && sudo apt -y install software-properties-common && sudo add-apt-repository ppa:ondrej/php && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
 
 В мене була така трудність
 The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that there is a problem with the package installer, which is generally caused by an interrupted installation process or a corrupted database
