@@ -23,6 +23,8 @@ The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that th
 ![Screenshot_156](https://user-images.githubusercontent.com/106797604/208024387-ceb69e2c-c0d4-40b7-b15a-2022d6a5b066.png)
 ![Screenshot_157](https://user-images.githubusercontent.com/106797604/208024388-c1f4fce4-6c17-4a48-9440-6c3dfaec9c54.png)
 
+Думав, що це проблема то з сертифыкатом, чи з AWS. Я пробував в Virtual Box, такак сама проблеема. Виясилося проблема в БД.
+
 Як я її ршив
 ```
 sudo mv /var/lib/dpkg/info /var/lib/dpkg/info_silent
