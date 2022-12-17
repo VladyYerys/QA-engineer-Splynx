@@ -17,10 +17,10 @@ sudo apt update  && sudo apt-get update -y && sudo apt install nginx -y && sudo 
 sudo apt update && sudo apt install mysql-server -y && sudo systemctl start mysql.service && systemctl status mysql.service && sudo apt-get upgrade -y
 ```
 ```
-sudo apt-get update && sudo apt -y install software-properties-common && sudo add-apt-repository ppa:ondrej/php && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
+sudo apt-get update && sudo add-apt-repository ppa:ondrej/php && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
 
-В мене була така трудність
-The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that there is a problem with the package installer, which is generally caused by an interrupted installation process or a corrupted database
+### В мене була такі трудністі
+### 1. The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that there is a problem with the package installer, which is generally caused by an interrupted installation process or a corrupted database
 
 ![Screenshot_156](https://user-images.githubusercontent.com/106797604/208024387-ceb69e2c-c0d4-40b7-b15a-2022d6a5b066.png)
 ![Screenshot_157](https://user-images.githubusercontent.com/106797604/208024388-c1f4fce4-6c17-4a48-9440-6c3dfaec9c54.png)
@@ -36,6 +36,9 @@ sudo apt-get -f install
 ```
 ![Screenshot_158](https://user-images.githubusercontent.com/106797604/208027318-3ed849a2-9686-46e6-9d30-33c32799597d.png)
 
+### 2. sudo apt -y install software-properties-common вона мені спаскудила налаштуваня nginx.
+Основний сервер був на nginx, а апи на Apache2.
+Й коли я хотів зайти в адмінку в мене вибивало 404.
 
 # 2) Додати кастомера, створити йому інвойс на суму рівну поточній даті в форматі “MMDD”
 # 3) Встановити аддон “Splynx IpPay” https://docs.splynx.com/payment_systems/ippay
