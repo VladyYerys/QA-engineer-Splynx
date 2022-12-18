@@ -39,6 +39,8 @@ sudo apt-get -f install
 ![Screenshot_163](https://user-images.githubusercontent.com/106797604/208282841-896b62bd-a0f5-4c67-82c9-967eccbcbb85.png)
 
 # 2) Додати кастомера, створити йому інвойс на суму рівну поточній даті в форматі “MMDD”
+![Screenshot_164](https://user-images.githubusercontent.com/106797604/208317819-bb719e6c-e681-4ee9-9bd9-dddc67b2cd50.png)
+
 
 # 3) Встановити аддон “Splynx IpPay” https://docs.splynx.com/payment_systems/ippay
 # 4) Сконфігурувати аддон для роботи в sandbox (проставити (‘isProduction’ => false) - це можназробити в файлі /var/www/splynx/addons/splynx-ippay/config/params.php, також, потрібно в конфізі аддона задати ‘Terminal ID’ = ‘TESTTERMINAL’ )
