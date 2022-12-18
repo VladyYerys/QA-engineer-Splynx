@@ -15,6 +15,7 @@ sudo apt update && sudo apt install mysql-server -y && sudo systemctl start mysq
 ```
 ```
 sudo apt-get update && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
+```
 
 ### В мене була такі трудністі
 ### 1. The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that there is a problem with the package installer, which is generally caused by an interrupted installation process or a corrupted database
@@ -33,11 +34,12 @@ sudo apt-get -f install
 ```
 ![Screenshot_158](https://user-images.githubusercontent.com/106797604/208027318-3ed849a2-9686-46e6-9d30-33c32799597d.png)
 
-### 2. sudo apt -y install software-properties-common вона мені спаскудила налаштуваня nginx.
-Основний сервер був на nginx, а апи на Apache2.
-Й коли я хотів зайти в адмінку в мене вибивало 404.
+![Screenshot_161](https://user-images.githubusercontent.com/106797604/208282838-66d5ec58-9fc2-42e3-8144-2a79a0f86eb6.png)
+![Screenshot_162](https://user-images.githubusercontent.com/106797604/208282840-b8cfcd5c-f885-4c51-a284-d3571baf9b00.png)
+![Screenshot_163](https://user-images.githubusercontent.com/106797604/208282841-896b62bd-a0f5-4c67-82c9-967eccbcbb85.png)
 
 # 2) Додати кастомера, створити йому інвойс на суму рівну поточній даті в форматі “MMDD”
+
 # 3) Встановити аддон “Splynx IpPay” https://docs.splynx.com/payment_systems/ippay
 # 4) Сконфігурувати аддон для роботи в sandbox (проставити (‘isProduction’ => false) - це можназробити в файлі /var/www/splynx/addons/splynx-ippay/config/params.php, також, потрібно в конфізі аддона задати ‘Terminal ID’ = ‘TESTTERMINAL’ )
 
