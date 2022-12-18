@@ -8,16 +8,13 @@ QA engineer
 ![Screenshot_155](https://user-images.githubusercontent.com/106797604/207785731-7c41ee5a-a2f5-4417-842f-a6bb817e088a.png)
 ![Screenshot_154](https://user-images.githubusercontent.com/106797604/207785729-08441f17-0db8-42c8-b6c8-0289731a08b9.png)
 ```
-sudo apt update && sudo apt-get update && sudo apt-get install apache2
+sudo apt update && sudo apt-get upgrade -y && sudo apt -y install curl gnupg2 ca-certificates lsb-release && echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list && echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list && curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key && sudo mv /tmp/nginx_signing.key /etc/apt/trusted.gpg.d/nginx_signing.asc && sudo apt update && sudo apt-get upgrade -y
 ```
-
-```
-sudo apt update  && sudo apt-get update -y && sudo apt install nginx -y && sudo ufw app list && sudo ufw allow 'Nginx HTTP' && sudo ufw enable -y && sudo ufw status && systemctl status nginx && sudo apt-get upgrade -y
 ```
 sudo apt update && sudo apt install mysql-server -y && sudo systemctl start mysql.service && systemctl status mysql.service && sudo apt-get upgrade -y
 ```
 ```
-sudo apt-get update && sudo add-apt-repository ppa:ondrej/php && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
+sudo apt-get update && sudo add-apt-repository ppa:ondrej/php && sudo apt -y install php7.4 -y && php -v && sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath && sudo apt update && sudo apt-get upgrade -y
 
 ### В мене була такі трудністі
 ### 1. The “sub-process /usr/bin/dpkg returned an error code (1)” indicates that there is a problem with the package installer, which is generally caused by an interrupted installation process or a corrupted database
