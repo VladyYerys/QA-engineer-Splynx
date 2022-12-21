@@ -18,8 +18,8 @@ QA engineer
 
 
 # 4) Сконфігурувати аддон для роботи в sandbox (проставити (‘isProduction’ => false) - це можназробити в файлі /var/www/splynx/addons/splynx-ippay/config/params.php, також, потрібно в конфізі аддона задати ‘Terminal ID’ = ‘TESTTERMINAL’ )
-![Screenshot_167](https://user-images.githubusercontent.com/106797604/208800132-37ed7215-e04d-4cba-88ab-c2c9460cf4f5.png)
-![Screenshot_169](https://user-images.githubusercontent.com/106797604/208800135-c575194f-d007-446f-90cc-1b1b6a56c819.png)
+![Screenshot_183](https://user-images.githubusercontent.com/106797604/208832643-7b4159f5-2b32-424b-8a47-698ba5f78ce2.png)
+
 
 # 5) Зайти на портал кастомерів під створеним в пункті 2 кастомером і оплатити інвойс ззбереженням тестової карти встановленим аддоном.
 ![Screenshot_170](https://user-images.githubusercontent.com/106797604/208800210-82ced700-1d14-40ea-abff-9777bf1470c2.png)
