@@ -14,8 +14,8 @@ QA engineer
 
 
 # 3) Встановити аддон “Splynx IpPay” https://docs.splynx.com/payment_systems/ippay
-![Screenshot_165](https://user-images.githubusercontent.com/106797604/208800011-b0e7b3b7-7e08-4be4-8841-320cc2812262.png)
-![Screenshot_166](https://user-images.githubusercontent.com/106797604/208800017-5a53f841-26f7-46e3-84dc-ae1f71948380.png)
+![Screenshot_182](https://user-images.githubusercontent.com/106797604/208832439-e17a8416-a283-48cb-96c8-a18497ef90f4.png)
+
 
 # 4) Сконфігурувати аддон для роботи в sandbox (проставити (‘isProduction’ => false) - це можназробити в файлі /var/www/splynx/addons/splynx-ippay/config/params.php, також, потрібно в конфізі аддона задати ‘Terminal ID’ = ‘TESTTERMINAL’ )
 ![Screenshot_167](https://user-images.githubusercontent.com/106797604/208800132-37ed7215-e04d-4cba-88ab-c2c9460cf4f5.png)
