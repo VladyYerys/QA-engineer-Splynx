@@ -43,9 +43,17 @@ sudo apt-get -f install
 
 
 # 3) Встановити аддон “Splynx IpPay” https://docs.splynx.com/payment_systems/ippay
+![Screenshot_165](https://user-images.githubusercontent.com/106797604/208800011-b0e7b3b7-7e08-4be4-8841-320cc2812262.png)
+![Screenshot_166](https://user-images.githubusercontent.com/106797604/208800017-5a53f841-26f7-46e3-84dc-ae1f71948380.png)
+
 # 4) Сконфігурувати аддон для роботи в sandbox (проставити (‘isProduction’ => false) - це можназробити в файлі /var/www/splynx/addons/splynx-ippay/config/params.php, також, потрібно в конфізі аддона задати ‘Terminal ID’ = ‘TESTTERMINAL’ )
+![Screenshot_167](https://user-images.githubusercontent.com/106797604/208800132-37ed7215-e04d-4cba-88ab-c2c9460cf4f5.png)
+![Screenshot_169](https://user-images.githubusercontent.com/106797604/208800135-c575194f-d007-446f-90cc-1b1b6a56c819.png)
 
 # 5) Зайти на портал кастомерів під створеним в пункті 2 кастомером і оплатити інвойс ззбереженням тестової карти встановленим аддоном.
+![Screenshot_170](https://user-images.githubusercontent.com/106797604/208800210-82ced700-1d14-40ea-abff-9777bf1470c2.png)
+![Screenshot_171](https://user-images.githubusercontent.com/106797604/208800212-553e7f08-7caa-4ac1-94d9-f212d2862601.png)
+
  ```
  Card holder name: test test
 Test card number: 4111 1111 1111 1111
