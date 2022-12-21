@@ -61,3 +61,45 @@ Test card number: 4111 1111 1111 1111
 Exp. To: any date in future
 ```
 # 6) До кожного пункту створити 1-2 скріншота і опис, по закінченню відправити архів все наostap.yeris@splynx.com
+```
+#!/bin/bash
+echo "=====================Install Nginx Server=========================="
+sudo apt update && sudo apt-get upgrade -y 
+sudo apt install nginx
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw enable
+sudo ufw status
+sleep 2
+systemctl status nginx 
+sudo apt update && sudo apt-get upgrade -y
+sleep 2
+
+#Install PHP 
+echo "=====================Install PHP7.4================================"
+sudo apt -y install php7.4 php7.4-cli php7.4-fpm php7.4-json php7.4-pdo php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php-pear php7.4-bcmath
+echo "=====================PHP7.4 ENABLE================================="
+echo "`php --version`"
+sleep 5
+sudo apt update && sudo apt-get upgrade -y
+sleep 5
+
+# Install MySql server
+echo "=====================Install MySQL serve==========================="
+sudo apt update && sudo apt install mysql-server -y 
+echo "`mysql -V`"
+sleep 2
+sudo systemctl start mysql.service && systemctl status mysql.service
+sleep 2
+sudo apt-get upgrade -y
+sleep 2
+
+# Install Splynx
+echo "=====================Install Splynx================================"
+dpkg-reconfigure tzdata
+wget -qO- https://deb.splynx.com/setup_4_0 | bash -
+apt-get install splynx -y
+apt-get install ca-certificates -y
+update-ca-certificates
+
+```
