@@ -53,6 +53,7 @@ sudo apt-get -f install
 # 5) Зайти на портал кастомерів під створеним в пункті 2 кастомером і оплатити інвойс ззбереженням тестової карти встановленим аддоном.
 ![Screenshot_170](https://user-images.githubusercontent.com/106797604/208800210-82ced700-1d14-40ea-abff-9777bf1470c2.png)
 ![Screenshot_171](https://user-images.githubusercontent.com/106797604/208800212-553e7f08-7caa-4ac1-94d9-f212d2862601.png)
+![Screenshot_172](https://user-images.githubusercontent.com/106797604/208804012-73a7c6ba-e555-4a45-a4d7-fb6eaab1248b.png)
 
  ```
  Card holder name: test test
