@@ -3,6 +3,7 @@ Assignment task End date:15.12.2022  11am
 
 Тестове завдання
 QA engineer
+![Screenshot_176](https://user-images.githubusercontent.com/106797604/208827011-7fc52bcc-12f7-49ed-bf95-efdbba2194ae.png)
 
 # 1) Встановити Splynx на віртуальну машину (license key: 96920c0b2d7d3de6874eb52f836a1325) ОС - Ubuntu 20.04 (server)
 ![Screenshot_155](https://user-images.githubusercontent.com/106797604/207785731-7c41ee5a-a2f5-4417-842f-a6bb817e088a.png)
